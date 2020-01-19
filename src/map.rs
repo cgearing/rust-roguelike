@@ -1,5 +1,5 @@
 extern crate rltk;
-use super::{Rect};
+use super::Rect;
 use rltk::{Algorithm2D, BaseMap, Console, Point, RandomNumberGenerator, Rltk, RGB};
 use std::cmp::{max, min};
 extern crate specs;
@@ -11,9 +11,9 @@ pub enum TileType {
     Floor,
 }
 
-const MAPWIDTH: usize = 80;
-const MAPHEIGHT: usize = 43;
-const MAPCOUNT: usize = MAPHEIGHT * MAPWIDTH;
+pub const MAPWIDTH: usize = 80;
+pub const MAPHEIGHT: usize = 43;
+pub const MAPCOUNT: usize = MAPHEIGHT * MAPWIDTH;
 
 pub struct Map {
     pub tiles: Vec<TileType>,
